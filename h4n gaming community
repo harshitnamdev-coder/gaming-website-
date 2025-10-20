@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>H4N Gaming Community</title>
+  <style>
+    /* Background and general styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: white;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      background-color: rgba(20, 20, 20, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 0 30px #00ffe7;
+      backdrop-filter: blur(12px);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      color: #00ffe7;
+      text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+    }
+
+    p, label, li, td, th, input, select, textarea {
+      font-size: 1rem;
+    }
+
+    section {
+      margin-top: 40px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+      background: #111;
+      color: white;
+      box-shadow: 0 0 10px #00ffe7;
+      outline: none;
+    }
+
+    input:invalid {
+      border: 1px solid red;
+    }
+
+    input[type="radio"] {
+      width: auto;
+      margin: 10px 10px 0 0;
+      accent-color: #00ffe7;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+      color: white;
+    }
+
+    th, td {
+      border: 1px solid #00ffe7;
+      padding: 10px;
+      text-align: center;
+      background-color: #111;
+    }
+
+    th {
+      background-color: #222;
+      text-shadow: 0 0 5px #00ffe7;
+    }
+
+    .featured {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .featured div {
+      text-align: center;
+      flex: 1 1 200px;
+      background: #111;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ffe7;
+    }
+
+    .featured img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .featured img:hover {
+      transform: scale(1.1);
+    }
+
+    .featured a {
+      display: block;
+      color: #00ffe7;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 20px;
+      font-size: 1.1rem;
+      background: #00ffe7;
+      color: black;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      box-shadow: 0 0 15px #00ffe7;
+    }
+
+    button:hover {
+      background: #00c2b2;
+    }
+
+    .discord {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .discord img {
+      width: 40px;
+      vertical-align: middle;
+      filter: drop-shadow(0 0 10px #7289da);
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      margin-top: 20px;
+      border: none;
+      box-shadow: 0 0 15px #00ffe7;
+      border-radius: 10px;
+    }
+
+    ::selection {
+      background: #00ffe7;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>WELCOME TO H4N GAMING COMMUNITY</h1>
+    <p style="text-align: center;">"DON'T JUST PLAY - <span style="color: #ff00c8;">DOMINATE</span> THE GAME!"</p>
+    <p style="text-align: center;">"STRATEGIZE • PLAY • <span style="color: #ff00c8;">CONQUER</span>"</p>
+    <p style="text-align: center;">"UNLEASH YOUR <span style="color: #ff00c8;">INNER CHAMPION</span>"</p>
+    <p style="text-align: center;">ʜ4ɴ ɪꜱ ᴛʜᴇ ʙɪɢɢᴇꜱᴛ ɢᴀᴍɪɴɢ ᴘʟᴀᴛꜰᴏʀᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ ꜱʜᴏᴡ ʏᴏᴜʀ ꜱᴋɪʟʟꜱ ᴀɴᴅ ᴇᴀʀɴ ᴍᴏɴᴇʏ.</p>
+
+    <section>
+      <h2>EASY STEPS TO FOLLOW</h2>
+      <ol>
+        <li><strong>Sign Up:</strong> Join with your email to participate</li>
+        <li><strong>Compete:</strong> Enter battles for cash and glory</li>
+        <li><strong>Win and Earn:</strong> Get coins and convert them to money</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>REGISTER HERE</h2>
+      <form>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Select Your Device</label><br>
+        <input type="radio" name="device" value="Mobile" required> Mobile
+        <input type="radio" name="device" value="PC"> PC <BR>
+
+        <label>Mobile Model</label>
+        <input type="text" placeholder="e.g. iPhone 14, Realme X7">
+
+        <label>Select Your Game</label><br>
+        <input type="radio" name="game" value="PUBG" required> PUBG<br>
+        <input type="radio" name="game" value="VALORANT"> VALORANT<br>
+        <input type="radio" name="game" value="CALL OF DUTY"> CALL OF DUTY<br>
+        <input type="radio" name="game" value="INDUS"> INDUS
+      </form>
+    </section>
+
+    <section>
+      <h2>ENTRY FEES</h2>
+      <table>
+        <tr><th>Game</th><th>Price</th></tr>
+        <tr><td>PUBG</td><td>200 INR</td></tr>
+        <tr><td>VALORANT</td><td>100 INR</td></tr>
+        <tr><td>CALL OF DUTY</td><td>250 INR</td></tr>
+        <tr><td>INDUS</td><td>150 INR</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>FEATURED TOURNAMENT</h2>
+      <div class="featured">
+        <div>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg" alt="PUBG">
+          <a href="https://pubg.com" target="_blank">PUBG</a>
+        </div>
+        <div>
+          <img src="https://imgs.search.brave.com/oXPSdPgvWWpQBZzPQooQdfT7t8J3QucTRqKGSHw5wCI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXM1LmFscGhhY29k/ZXJzLmNvbS8xMzYv/dGh1bWJiaWctMTM2/MDY1NS53ZWJw" alt="VALORANT">
+          <a href="https://playvalorant.com" target="_blank">VALORANT</a>
+        </div>
+        <div>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/header.jpg" alt="COD">
+          <a href="https://www.callofduty.com/" target="_blank">CALL OF DUTY</a>
+        </div>
+        <div>
+          <img src="https://imgs.search.brave.com/wNTFlnqRBHZBHIWNQ1TfBsuXU8Vr60Z4zPMhtO56Mno/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/dGFwaW1nLm5ldC9t/YXJrZXQvaW1hZ2Vz/LzcwMDIxODYxMjFk/NWQxNGRmNmQ2YjY4/Y2EzMWM0MTQ2Lmpw/Zz9pbWFnZVZpZXcy/LzIvdy8zNjAvaC8z/NjAvcS84MC9mb3Jt/YXQvanBnL2ludGVy/bGFjZS8xL2lnbm9y/ZS1lcnJvci8xJnQ9/MQ" alt="INDUS">
+          <a href="https://indusgame.com/" target="_blank">INDUS</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>PRIZE MONEY</h2>
+      <table>
+        <tr><th>Game</th><th>Per Kill</th><th>BOOYAH</th></tr>
+        <tr><td>PUBG</td><td>30 INR</td><td>150 INR</td></tr>
+        <tr><td>VALORANT</td><td>25 INR</td><td>100 INR</td></tr>
+        <tr><td>CALL OF DUTY</td><td>25 INR</td><td>130 INR</td></tr>
+        <tr><td>INDUS</td><td>20 INR</td><td>100 INR</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>SELECT YOUR PAYMENT TYPE</h2>
+      <input type="radio" name="payment" value="Paytm" required> PAYTM
+      <input type="radio" name="payment" value="Visa"> VISA
+      <input type="radio" name="payment" value="GPay"> GOOGLE PAY
+      <input type="radio" name="payment" value="Credit Card"> CREDIT CARD
+    </section>
+
+    <section>
+      <h2>FEEDBACK</h2>
+      <textarea rows="5" placeholder="Give us your feedback..." required></textarea>
+      <button type="submit">Submit</button>
+    </section>
+
+    <div class="discord">
+      <h3>H4N TOURNAMENTS<br>POWERED BY HARSHIT NAMDEV<br>COPowered by iVOOMi</h3>
+      <p>FOR MORE DETAILS VISIT OUR DISCORD SERVER</p>
+      <a href="https://discord.com/invite/KCeFwsb3XU" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord Logo"> RG AXOM
+      </a>
+    </div>
+  </div>
+</body>
+</html>
